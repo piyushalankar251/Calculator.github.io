@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    overflow:auto;
+    box-sizing:border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+  }
+body{
+background-size: contain;
+background-repeat: no-repeat;
+opacity: 0.8;
+display:flex;
+flex-wrap: wrap;
+padding: 20px;
+
+
+}
+.container
+{
+background-color: #fff;
+position: absolute;
+overflow: auto;
+border-radius: 10px;
+top: 50%;
+left: 50%;
+opacity: 0.8;
+height: auto;
+width: fit-content;
+transform: translate(-50%,-50%);
+align-content: center;
+z-index: 2;
+box-shadow: 2px 2px 5px black;
+border:none;
+
+}
+.buttons
+{
+display:grid;
+grid-template-columns:repeat(4,6vw);
+overflow: auto;
+height: auto;
+width: fit-content;
+align-content: center;
+z-index: 1;
+outline: none;
+border: none;
+background:transparent;
+}
+.result{
+display:block;
+width: 24vw;
+height: 15vh;
+background-color: black;
+color: navajowhite;
+font-size: 1.2em;
+justify-content: center;
+align-items: center;
+opacity:1.0;
+overflow-x: hidden;
+}
+p{
+font-size: 3em;
+}
+.button
+{
+background:none;
+padding:10px;
+height: 10vh;
+width:100%;
+display:block;
+text-align:center;
+font-family: 'Baloo Bhaina 2', cursive;
+font-size: 1em;
+color:rgb(255, 102, 0);
+font-size: 2em;
+border: none;
+
+}
+.button:hover{
+background-color:rgb(211, 203, 203);
+border-radius: 6px;
+}
+@media screen and (max-width:800px)
+{
+.container
+{
+overflow: auto;
+top: 50%;
+left: 50%;
+opacity: 0.8;
+height: auto;
+width: fit-content;
+border-radius: 10px;
+transform: translate(-50%,-50%);
+align-content: center;
+z-index: 1;
+box-shadow: 2px 5px  2px  gray;
+}
+.buttons
+{
+display:grid;
+grid-template-columns:repeat(4,20.1vw);
+overflow: auto;
+padding: 1px;
+height: auto;
+width: fit-content;
+align-content: center;
+z-index: 1;
+}
+.result{
+    display:block;
+    width: 80vw;
+    height: 16vh;
+    background-color: black;
+    color: navajowhite;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    opacity:1.0;
+    overflow-x: hidden;
+    }
+p{
+    font-size: 1.2em;
+}
+.button
+{
+background:none;
+padding:7px;
+height: 11vh;
+width:100%;
+display:block;
+text-align:center;
+font-family: 'Baloo Bhaina 2', cursive;
+font: size 1.1em;
+color:rgb(255, 94, 0);
+z-index: 2;
+overflow: hidden;
+border: none;
+}
+
+
+}
